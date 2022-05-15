@@ -1,0 +1,35 @@
+/#Load livepatcher
+&#os/livepatcher
+
+/#Load at20
+&#os/at20
+
+/#Load Thread Manager
+&#os/threadmanager
+
+/#Load Network
+&#os/network
+
+/#Load Updater
+&#os/update
+
+/#Load Shell
+&#os/shell
+
+/#Load Distrobution Manager
+&#os/distro_manger
+
+/#Load Package Manager
+&#os/package_manger
+
+
+/#Begin Operating Loop
+@#AspectCore.index
+~~~*
+c#*i|+output|_text|s#AspectuCore[|_text|v#|_version|_text|]:|_ret|/# shell info
+c#+input|AspectuCore.contex.input|i*|/# get input
+c#*aspectu.shell|AspectuCore.contex.input
+c#*c|+goto|AspectuCore.index
+
+@#AspectuCore.end
+&#os/terminator

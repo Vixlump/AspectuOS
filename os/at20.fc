@@ -1,0 +1,9 @@
+/#Shell OS Interaction:
+*v
++store
+c#_bool|at20.signal.shutdown|b#false
+c#_bool|at20.signal.restart|b#false
+c#_bool|at20.signal.sleep|b#false
+c#_bool|at20.signal.shell|b#false
+_ret
+v*
